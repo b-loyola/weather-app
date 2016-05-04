@@ -1,10 +1,11 @@
 <html>
 <head>
 
+	<link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
 	<link rel="stylesheet" href="public/stylesheets/application.css">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-	<script type="text/javascript" src="public/javascript/handlebars-v4.0.5.js"></script>
+	<!-- <script type="text/javascript" src="public/javascript/handlebars-v4.0.5.js"></script> -->
   <script type="text/javascript" src=".env"></script>
 	<script type="text/javascript" src="public/javascript/application.js"></script>
 
@@ -13,18 +14,52 @@
 </head>
 <body>
 
-	<h1>Weather App</h1>
+	<div class="container">
 
-	<form id="city-query">
-		<input type="text"/>
-		<button>Submit</button>
-	</form>
+		<div class="row">
 
-	<ul id="results">
-	</ul>
+			<div class="col-xs-12">
+				<div class="center-block">
+					<h1 class="text-center">Weather App</h1>
+				</div>
+			</div>
 
-	<section id="weather-info">
-	</section>
+		</div>
 
+		<div class="spacer-line"></div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+
+				<form id="city-query">
+					<div class="form-group row">
+
+						<div class="col-xs-12 col-md-8">
+							<input type="text" class="form-control"/>
+							<div class="spacer"></div>
+						</div>
+
+
+						<div class="col-xs-12 col-md-4">
+							<button class="btn btn-success btn-block">Submit</button>
+						</div>
+
+					</div>
+				</form>
+
+				<div id="results" class="list-group"></div>
+
+			</div>
+			<div class="col-xs-12 col-sm-6">
+
+				<section id="weather-info">
+				</section>
+
+			</div>
+		</div>
+
+
+
+	 </div>
 </body>
 </html>

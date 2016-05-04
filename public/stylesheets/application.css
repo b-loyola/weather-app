@@ -1,3 +1,24 @@
 .search-result {
 	cursor: pointer;
 }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#weather-info {
+	min-height: 300px;
+	border: solid 1px #d3d3d3;
+	padding: 20px;
+}
+
+.spacer-line {
+	border-top: solid 1px #d3d3d3;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.spacer{
+	margin-top: 1em;
+}
