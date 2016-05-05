@@ -1,5 +1,13 @@
+body {
+	font-family: 'Lato'
+}
+
 .search-result {
 	cursor: pointer;
+}
+
+#title {
+	color: white;
 }
 
 .col-centered{
@@ -8,17 +16,27 @@
 }
 
 #weather-info {
-	min-height: 300px;
-	border: solid 1px #d3d3d3;
-	padding: 20px;
+	min-height: 256px;
+	border: solid 1px #a8b5bf;
+	border-radius: 4px;
+	padding: 25px;
+	background-color: #f2f2f2;
 }
 
 .spacer-line {
-	border-top: solid 1px #d3d3d3;
+	border-top: solid 1px #ccc;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
 .spacer{
 	margin-top: 1em;
+}
+
+body { 
+	background: url("../media/background.jpg"); 
+}
+
+.temperature {
+	font-size: 2em;
 }

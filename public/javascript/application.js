@@ -45,7 +45,8 @@ $(function (){
 				} else {
 					$('<article>')
 						.append($('<h4>').text(response.location.city + ", " + response.location.country_name))
-						.append($('<p>').text(response.current_observation.temp_c + " degrees Celsius"))
+						.append($('<p>').addClass('temperature').text(response.current_observation.temperature_string))
+						.append($('<p>').text("Feels like: " + response.current_observation.feelslike_string))
 						.append($('<p>').text(response.current_observation.weather))
 						.append($('<img>').attr('src', response.current_observation.icon_url))
 						.appendTo(weatherInfo);
